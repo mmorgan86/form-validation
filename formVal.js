@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     for( let i = 0; i < required.length; i++) {
       if (required[i].val() == "") {
-        $(message).text("Please Fill Out Required Fields").addClass('warning');
+        $(message).text("Please Fill Out Required Fields!").addClass('warning');
         required[i].prev().addClass('warning')
       }else {
         required[i].removeClass('warning')
